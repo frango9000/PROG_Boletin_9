@@ -7,10 +7,10 @@ public class PROG_Boletin_9_6 {
         Scanner scan = new Scanner(System.in);
         int cont=0, cont999=0, cont1750=0;
         float sueldo=1;
-        while(sueldo != 0){
+        while(sueldo > 0){
             System.out.println("Introduce el sueldo del trabajador "+ cont+" : ");
             sueldo = scan.nextFloat();
-            if(sueldo == 0) break;
+            if(sueldo <= 0) break;
             cont++;
             if(sueldo < 1000)cont999++;
             if(sueldo >= 1000 && sueldo <=1750)cont1750++;
